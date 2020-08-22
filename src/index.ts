@@ -13,7 +13,7 @@ const logger = winston.createLogger({
   level: 'http',
   format: winston.format.combine(
     winston.format.splat(),
-    winston.format.simple(),
+    winston.format.simple()
   ),
   transports: [new winston.transports.Console()],
 });
