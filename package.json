@@ -6,8 +6,8 @@
   "scripts": {
     "build": "rm -rf dist && tsc",
     "dev": "nodemon",
-    "jest": "jest --forceExit",
-    "lint": "eslint --ext .ts --fix src test",
+    "jest": "jest --detectOpenHandles --passWithNoTests",
+    "lint": "eslint --ext .ts --fix src",
     "start": "node dist",
     "test": "yarn lint && yarn build && yarn jest"
   },
@@ -35,6 +35,7 @@
     "nodemon": "^2.0.4",
     "prettier": "^2.0.5",
     "ts-jest": "^26.2.0",
+    "ts-node": "^9.0.0",
     "typescript": "^4.0.2"
   }
 }
