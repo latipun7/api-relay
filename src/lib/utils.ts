@@ -1,8 +1,5 @@
 import axios, { AxiosResponse } from 'axios';
-import dotenv from 'dotenv';
 import { Request } from 'express';
-
-dotenv.config();
 
 const { NEWS_API_KEY, FOOTBALL_API_KEY } = process.env;
 

@@ -1,18 +1,51 @@
 {
   "compilerOptions": {
-    "module": "commonjs",
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es2018",
-    "strict": true,
-    "moduleResolution": "node",
-    "sourceMap": true,
+    // Project Options
+    // (https://www.typescriptlang.org/tsconfig#Basic_Options_6172)
+    "allowJs": true,
+    "checkJs": true,
+    "lib": ["ES2015", "ES2016", "ES2017", "ES2018"],
+    "module": "CommonJS",
     "outDir": "dist",
-    "baseUrl": ".",
+    "removeComments": true,
+    "sourceMap": true,
+    "target": "ES2018",
+
+    // Strict Check
+    // (https://www.typescriptlang.org/tsconfig#Strict_Type_Checking_Options_6173)
+    "strict": true,
+
+    // Module Resolution
+    // (https://www.typescriptlang.org/tsconfig#Module_Resolution_Options_6174)
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": "./",
+    "esModuleInterop": true,
+    "moduleResolution": "node",
     "paths": {
-      "*": ["node_modules/*", "src/types/*"]
-    }
+      "*": ["typings/*"],
+      "configs/*": ["configs/*"],
+      "lib/*": ["src/lib/*"]
+    },
+
+    // Linter Checks
+    // (https://www.typescriptlang.org/tsconfig#Additional_Checks_6176)
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitReturns": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    // Experimental
+    // (https://www.typescriptlang.org/tsconfig#Experimental_Options_6177)
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+
+    // Advanced
+    // (https://www.typescriptlang.org/tsconfig#Advanced_Options_6178)
+    "forceConsistentCasingInFileNames": true,
+    "newLine": "lf",
+    "resolveJsonModule": true,
+    "skipLibCheck": true
   },
-  "include": ["src/**/*"],
-  "exclude": ["node_modules", "test"]
+  "exclude": ["node_modules", "dist", "test"],
+  "include": ["src/**/*"]
 }

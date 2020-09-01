@@ -1,18 +1,15 @@
 module.exports = {
-  env: {
-    es6: true,
-    node: true,
-    jest: true,
-  },
+  extends: ['ruppy-node', 'plugin:@typescript-eslint/recommended'],
+  env: { node: true, jest: true },
   parserOptions: {
     parser: '@typescript-eslint/parser',
-    ecmaVersion: 2018,
+    ecmaVersion: 2020,
     sourceType: 'module',
   },
   plugins: ['@typescript-eslint'],
-  extends: ['ruppy-node', 'plugin:@typescript-eslint/recommended'],
+  settings: { 'import/resolver': { typescript: {} } },
   rules: {
-    '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-empty-interface': 'off',
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
   },
 };
