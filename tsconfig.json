@@ -1,51 +1,37 @@
 {
   "compilerOptions": {
-    // Project Options
-    // (https://www.typescriptlang.org/tsconfig#Basic_Options_6172)
     "allowJs": true,
     "checkJs": true,
-    "lib": ["ES2015", "ES2016", "ES2017", "ES2018"],
+    "lib": ["ES2015", "ES2016", "ES2017", "ES2018", "ESNext"],
     "module": "CommonJS",
     "outDir": "dist",
     "removeComments": true,
     "sourceMap": true,
-    "target": "ES2018",
+    "target": "ES2019",
 
-    // Strict Check
-    // (https://www.typescriptlang.org/tsconfig#Strict_Type_Checking_Options_6173)
     "strict": true,
 
-    // Module Resolution
-    // (https://www.typescriptlang.org/tsconfig#Module_Resolution_Options_6174)
     "allowSyntheticDefaultImports": true,
     "baseUrl": "./",
     "esModuleInterop": true,
     "moduleResolution": "node",
     "paths": {
-      "*": ["typings/*"],
-      "configs/*": ["configs/*"],
       "lib/*": ["src/lib/*"]
     },
 
-    // Linter Checks
-    // (https://www.typescriptlang.org/tsconfig#Additional_Checks_6176)
     "noFallthroughCasesInSwitch": true,
     "noImplicitReturns": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
 
-    // Experimental
-    // (https://www.typescriptlang.org/tsconfig#Experimental_Options_6177)
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
 
-    // Advanced
-    // (https://www.typescriptlang.org/tsconfig#Advanced_Options_6178)
     "forceConsistentCasingInFileNames": true,
     "newLine": "lf",
     "resolveJsonModule": true,
     "skipLibCheck": true
   },
-  "exclude": ["node_modules", "dist", "test"],
-  "include": ["src/**/*"]
+  "exclude": ["node_modules", "dist"],
+  "include": ["src/**/*", "test/**/*"]
 }

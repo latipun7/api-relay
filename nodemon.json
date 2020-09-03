@@ -1,6 +1,6 @@
 {
   "watch": ["src"],
   "ext": "ts,tsx",
-  "ignore": ["src/**/*.{spec,test}.{ts,tsx}"],
-  "exec": "ts-node -r dotenv/config ./src/index.ts"
+  "ignore": ["src/**/*.{spec,test}.{ts,tsx}", "test/**/*"],
+  "exec": "ts-node -r tsconfig-paths/register -r dotenv/config ./src/index.ts"
 }
