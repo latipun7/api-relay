@@ -1,0 +1,13 @@
+{
+  "host": "localhost",
+  "port": "PORT",
+  "dbURI": "DB_URL",
+  "api": {
+    "newsToken": "API__NEWS_TOKEN",
+    "footballToken": "API__FOOTBALL_TOKEN"
+  },
+  "paginate": {
+    "default": 10,
+    "max": 50
+  }
+}
