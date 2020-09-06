@@ -12,6 +12,7 @@ module.exports = {
   bail: true,
   preset: 'ts-jest',
   testEnvironment: 'node',
+  testTimeout: 15000,
   moduleDirectories: ['node_modules', '<rootDir>'],
   verbose: true,
   collectCoverage: true,
