@@ -2,6 +2,7 @@
   "host": "localhost",
   "port": "PORT",
   "dbURI": "DB_URL",
+  "ts": true,
   "api": {
     "newsToken": "API__NEWS_TOKEN",
     "footballToken": "API__FOOTBALL_TOKEN"

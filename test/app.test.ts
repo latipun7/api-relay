@@ -1,30 +1,7 @@
-import { Server } from 'http';
-import url from 'url';
 import axios from 'axios';
+import { getUrl } from './jest.setup';
 
-import app from 'src/app';
-
-const port = 3541;
-const getUrl = (pathname?: string): string =>
-  url.format({
-    hostname: app.get('host') || 'localhost',
-    protocol: 'http',
-    port,
-    pathname,
-  });
-
-describe('Feathers application tests (with jest)', () => {
-  let server: Server;
-
-  beforeAll((done) => {
-    server = app.listen(port);
-    server.once('listening', () => done());
-  });
-
-  afterAll((done) => {
-    server.close(done);
-  });
-
+describe('Application tests', () => {
   it('starts and shows the index page', async () => {
     expect.assertions(1);
 
@@ -33,7 +10,7 @@ describe('Feathers application tests (with jest)', () => {
     expect(data).toBe('Hello World!');
   });
 
-  describe('404', () => {
+  describe('Error 404 not found tests', () => {
     it('shows a 404 HTML page', async () => {
       expect.assertions(2);
 

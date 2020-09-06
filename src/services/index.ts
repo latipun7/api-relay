@@ -1,4 +1,9 @@
 import type { Application } from 'typings/declarations';
 
-// eslint-disable-next-line @typescript-eslint/no-unused-vars, @typescript-eslint/no-empty-function
-export default function services(_: Application): void {}
+import news from './news/news.service';
+import football from './football/football.service';
+
+export default function services(app: Application): void {
+  app.configure(news);
+  app.configure(football);
+}
