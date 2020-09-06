@@ -1,28 +1,42 @@
-import axios, { AxiosResponse } from 'axios';
-import { Request } from 'express';
+import axios from 'axios';
+import { GeneralError, BadRequest } from '@feathersjs/errors';
+import type { AxiosResponse } from 'axios';
+import type { Query } from '@feathersjs/feathers';
 
-const { NEWS_API_KEY, FOOTBALL_API_KEY } = process.env;
-
-async function requestNews(url: string, req: Request): Promise<AxiosResponse> {
+async function requestNews(
+  url: string,
+  token: string,
+  query?: Query
+): Promise<AxiosResponse> {
   try {
-    const request = await axios.get(url, {
-      headers: { 'X-Api-Key': NEWS_API_KEY },
-      params: req.query,
+    const { data } = await axios.get(url, {
+      headers: { 'X-Api-Key': token },
+      params: query,
     });
-    return request.data;
+
+    return data;
   } catch (error) {
-    return error;
+    if (error.response) {
+      throw new BadRequest(error.response.data);
+    }
+    throw new GeneralError(error);
   }
 }
 
-async function requestFootball(url: string): Promise<AxiosResponse> {
+async function requestFootball(
+  url: string,
+  token: string
+): Promise<AxiosResponse> {
   try {
-    const request = await axios.get(url, {
-      headers: { 'X-Auth-Token': FOOTBALL_API_KEY },
+    const { data } = await axios.get(url, {
+      headers: { 'X-Auth-Token': token },
     });
-    return request.data;
+    return data;
   } catch (error) {
-    return error;
+    if (error.response) {
+      throw new BadRequest(error.response.data);
+    }
+    throw new GeneralError(error);
   }
 }
 

@@ -19,7 +19,7 @@
     "lint": "eslint --ext .js,.jsx,.ts,.tsx --fix --color --cache .",
     "pretty": "prettier --write .",
     "start": "pm2 --name api-relay --node-args \"-r ./tsconfig-paths-bootstrap.js -r dotenv/config\" start dist/src",
-    "test": "shx rm -rf dist && yarn lint && yarn pretty && yarn jest"
+    "test": "rimraf dist && yarn lint && yarn pretty && yarn jest"
   },
   "dependencies": {
     "@feathersjs/configuration": "^4.5.3",
@@ -52,7 +52,7 @@
     "lint-staged": "^10.2.13",
     "nodemon": "^2.0.4",
     "prettier": "^2.1.1",
-    "shx": "^0.3.2",
+    "rimraf": "^3.0.2",
     "ts-jest": "^26.3.0",
     "ts-node": "^9.0.0",
     "typescript": "^4.0.2"

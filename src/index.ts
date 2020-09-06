@@ -9,9 +9,5 @@ process.on('unhandledRejection', (reason, params) =>
 );
 
 server.on('listening', () =>
-  logger.info(
-    'Feathers application started on http://%s:%d',
-    app.get('host'),
-    port
-  )
+  logger.info('Application started on http://%s:%d', app.get('host'), port)
 );
