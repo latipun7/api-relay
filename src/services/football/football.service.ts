@@ -1,4 +1,4 @@
-// Initializes the `news` service on path `/news`
+// Initializes the `football` service on path `/football`
 import type { ServiceAddons } from '@feathersjs/feathers';
 import type { Application } from 'typings/declarations';
 
@@ -20,7 +20,7 @@ declare module 'typings/declarations' {
   }
 }
 
-export default function news(app: Application): void {
+export default function football(app: Application): void {
   // Initialize our service with any options it requires
   app.use('/football/epl-standings', EPLStandings);
   app.use('/football/teams/:id/matches', TeamMatches);

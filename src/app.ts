@@ -5,8 +5,10 @@ import cors from 'cors';
 import helmet from 'helmet';
 import logger from 'lib/logger';
 import type { Application } from 'typings/declarations';
+
 import appHooks from './app.hooks';
 import middleware from './middleware';
+import mongoose from './mongoose';
 import services from './services';
 
 const app: Application = express(feathers());
@@ -25,6 +27,7 @@ app.configure(express.rest());
 
 app.use('/', { find: async () => 'Hello World!' });
 
+app.configure(mongoose);
 app.configure(middleware);
 app.configure(services);
 

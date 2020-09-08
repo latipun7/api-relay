@@ -11,7 +11,7 @@ describe("'football' service", () => {
     expect(eplStandings && teamDetail && teamMatches).toBeTruthy();
   });
 
-  describe("Tests 'news' service endpoints", () => {
+  describe("Tests 'football' service endpoints", () => {
     it("'GET /football/epl-standings' properly", async () => {
       expect.assertions(1);
 
