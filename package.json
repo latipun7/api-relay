@@ -38,6 +38,7 @@
     "winston": "^3.0.0"
   },
   "devDependencies": {
+    "@shelf/jest-mongodb": "^1.2.3",
     "@types/compression": "^1.7.0",
     "@types/cors": "^2.8.7",
     "@types/helmet": "^0.0.48",

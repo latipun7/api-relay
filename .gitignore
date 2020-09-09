@@ -115,5 +115,8 @@ dist
 .yarn/install-state.gz
 .pnp.*
 
-# git hooks
+# husky git hooks
 hook-params
+
+# @self/jest-mongodb
+globalConfig.json

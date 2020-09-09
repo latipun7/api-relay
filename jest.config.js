@@ -1,5 +1,6 @@
 /* eslint-disable @typescript-eslint/no-var-requires */
 const { pathsToModuleNameMapper } = require('ts-jest/utils');
+const { defaults: tsJest } = require('ts-jest/presets');
 
 /**
  * @type {import('./tsconfig.json')}
@@ -10,8 +11,7 @@ const { compilerOptions } = require('./tsconfig.json');
 /** @type {import('@jest/types').Config.InitialOptions} */
 module.exports = {
   bail: true,
-  preset: 'ts-jest',
-  testEnvironment: 'node',
+  preset: '@shelf/jest-mongodb',
   testTimeout: 15000,
   moduleDirectories: ['node_modules', '<rootDir>'],
   verbose: true,
@@ -41,6 +41,7 @@ module.exports = {
     '<rootDir>/config',
     '<rootDir>/dist',
   ],
+  transform: tsJest.transform,
   globals: {
     'ts-jest': {},
   },
