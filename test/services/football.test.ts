@@ -1,6 +1,6 @@
 import axios from 'axios';
 import app from 'src/app';
-import { getUrl } from '../jest.setup';
+import { getUrl } from 'test/jest.setup';
 
 describe("'football' service", () => {
   it('registered the service', () => {

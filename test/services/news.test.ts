@@ -1,6 +1,6 @@
 import axios from 'axios';
 import app from 'src/app';
-import { getUrl } from '../jest.setup';
+import { getUrl } from 'test/jest.setup';
 
 describe("'news' service", () => {
   it('registered the service', () => {
@@ -13,6 +13,7 @@ describe("'news' service", () => {
   describe("Tests 'news' service endpoints", () => {
     it("'GET /news/top-headlines' properly", async () => {
       expect.assertions(1);
+
       const { data } = await axios.get(
         getUrl('news/top-headlines', 'country=jp')
       );
