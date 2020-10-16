@@ -24,7 +24,7 @@
   "dependencies": {
     "@feathersjs/configuration": "^4.5.3",
     "@feathersjs/errors": "^4.5.3",
-    "@feathersjs/express": "^4.5.4",
+    "@feathersjs/express": "^4.5.9",
     "@feathersjs/feathers": "^4.5.3",
     "axios": "^0.20.0",
     "cors": "^2.8.5",
