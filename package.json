@@ -41,7 +41,7 @@
     "@shelf/jest-mongodb": "^1.2.3",
     "@types/compression": "^1.7.0",
     "@types/cors": "^2.8.7",
-    "@types/helmet": "^0.0.48",
+    "@types/helmet": "^4.0.0",
     "@types/jest": "^26.0.14",
     "@types/mongoose": "^5.7.36",
     "@types/serve-favicon": "^2.5.0",
