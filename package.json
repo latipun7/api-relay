@@ -47,7 +47,7 @@
     "@types/serve-favicon": "^2.5.0",
     "@types/validator": "^13.1.0",
     "@typescript-eslint/eslint-plugin": "^4.1.0",
-    "@typescript-eslint/parser": "^4.1.0",
+    "@typescript-eslint/parser": "^4.8.2",
     "eslint": "^7.14.0",
     "eslint-config-ruppy-node": "^1.5.0",
     "eslint-import-resolver-typescript": "^2.3.0",
