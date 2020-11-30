@@ -34,7 +34,7 @@
     "mongoose": "^5.10.18",
     "nanoid": "^3.1.18",
     "tsconfig-paths": "^3.9.0",
-    "validator": "^13.1.17",
+    "validator": "^13.5.0",
     "winston": "^3.0.0"
   },
   "devDependencies": {
