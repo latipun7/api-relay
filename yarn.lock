@@ -317,14 +317,14 @@
   resolved "https://registry.yarnpkg.com/@feathersjs/commons/-/commons-4.5.10.tgz#e2dc526ce44f8e32c88fbb7bc3b89670e2781622"
   integrity sha512-3d6HaknbSY3fuA+BIrIxQhxGlA7EKCmH4YK3KR+f2cg7vZYHNEl+Cf5XC2fP2V7kWrdVgLy2AeB3t6oxCIFGtQ==
 
-"@feathersjs/configuration@^4.5.3":
-  version "4.5.8"
-  resolved "https://registry.yarnpkg.com/@feathersjs/configuration/-/configuration-4.5.8.tgz#7c92c611800bb6823833a9987df889adeee83189"
-  integrity sha512-eSMoGJBPlIYJagn+WDW+3ZHOWNdSLeH93Q/w1yV0jLMWMBobUHq912KQJ0PAnrzpcsulEnuDrsL2DBWwa/R0bQ==
+"@feathersjs/configuration@^4.5.10":
+  version "4.5.10"
+  resolved "https://registry.yarnpkg.com/@feathersjs/configuration/-/configuration-4.5.10.tgz#3bae2bbad83c4933050eceba82fbed49b22d8aba"
+  integrity sha512-afXD1js1NZovMcQnOENOKRuEpg/S6BM8/qRMzOGkOQ4T+aLT8FUN/7JI5osVvrX90gupGXaTzQ1oxJ6ypXpNOA==
   dependencies:
-    "@feathersjs/feathers" "^4.5.8"
-    config "^3.3.1"
-    debug "^4.1.1"
+    "@feathersjs/feathers" "^4.5.10"
+    config "^3.3.2"
+    debug "^4.2.0"
 
 "@feathersjs/errors@^4.4.3", "@feathersjs/errors@^4.5.10", "@feathersjs/errors@^4.5.2":
   version "4.5.10"
@@ -346,7 +346,7 @@
     lodash "^4.17.20"
     uberproto "^2.0.6"
 
-"@feathersjs/feathers@^4.5.10", "@feathersjs/feathers@^4.5.2", "@feathersjs/feathers@^4.5.8":
+"@feathersjs/feathers@^4.5.10", "@feathersjs/feathers@^4.5.2":
   version "4.5.10"
   resolved "https://registry.yarnpkg.com/@feathersjs/feathers/-/feathers-4.5.10.tgz#bef3b9a2362503b23ca8292426c494725f2192fa"
   integrity sha512-7NURB+Rc/CeoBmPFaCc6BCAlgxrJUbvhBYDzG4+koLaw9kAabbqhEOfb/KyqVQodbIWDFQjWS/IXYxjNYlrWeg==
@@ -1703,10 +1703,10 @@ concat-map@0.0.1:
   resolved "https://registry.yarnpkg.com/concat-map/-/concat-map-0.0.1.tgz#d8a96bd77fd68df7793a73036a3ba0d5405d477b"
   integrity sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=
 
-config@^3.3.1:
-  version "3.3.1"
-  resolved "https://registry.yarnpkg.com/config/-/config-3.3.1.tgz#b6a70e2908a43b98ed20be7e367edf0cc8ed5a19"
-  integrity sha512-+2/KaaaAzdwUBE3jgZON11L1ggLLhpf2FsGrfqYFHZW22ySGv/HqYIXrBwKKvn+XZh1UBUjHwAcrfsSkSygT+Q==
+config@^3.3.2:
+  version "3.3.3"
+  resolved "https://registry.yarnpkg.com/config/-/config-3.3.3.tgz#d3c110fce543022c2fde28712e4f1b8440dee101"
+  integrity sha512-T3RmZQEAji5KYqUQpziWtyGJFli6Khz7h0rpxDwYNjSkr5ynyTWwO7WpfjHzTXclNCDfSWQRcwMb+NwxJesCKw==
   dependencies:
     json5 "^2.1.1"
 
