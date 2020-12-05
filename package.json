@@ -22,7 +22,7 @@
     "test": "rimraf dist && yarn lint && yarn pretty && yarn jest"
   },
   "dependencies": {
-    "@feathersjs/configuration": "^4.5.10",
+    "@feathersjs/configuration": "^4.5.11",
     "@feathersjs/errors": "^4.5.10",
     "@feathersjs/express": "^4.5.10",
     "@feathersjs/feathers": "^4.5.10",
