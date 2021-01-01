@@ -43,7 +43,7 @@
     "@types/cors": "^2.8.9",
     "@types/helmet": "^4.0.0",
     "@types/jest": "^26.0.19",
-    "@types/mongoose": "^5.7.36",
+    "@types/mongoose": "^5.10.3",
     "@types/serve-favicon": "^2.5.2",
     "@types/validator": "^13.1.2",
     "@typescript-eslint/eslint-plugin": "^4.10.0",
