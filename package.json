@@ -50,7 +50,7 @@
     "@typescript-eslint/parser": "^4.10.0",
     "eslint": "^7.21.0",
     "eslint-config-ruppy-node": "^1.5.0",
-    "eslint-import-resolver-typescript": "^2.3.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
     "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^3.3.1",
