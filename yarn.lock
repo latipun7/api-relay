@@ -2164,27 +2164,25 @@ escodegen@^1.14.1:
   optionalDependencies:
     source-map "~0.6.1"
 
-eslint-config-prettier@^6.12.0:
-  version "6.15.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-6.15.0.tgz#7f93f6cb7d45a92f1537a70ecc06366e1ac6fed9"
-  integrity sha512-a1+kOYLR8wMGustcgAjdydMsQ2A/2ipRPwRKUmfYaSxc9ZPcrku080Ctl6zrZzZNs/U82MjSv+qKREkoq3bJaw==
-  dependencies:
-    get-stdin "^6.0.0"
+eslint-config-prettier@^8.1.0:
+  version "8.1.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.1.0.tgz#4ef1eaf97afe5176e6a75ddfb57c335121abc5a6"
+  integrity sha512-oKMhGv3ihGbCIimCAjqkdzx2Q+jthoqnXSP+d86M9tptwugycmTFdVR4IpLgq2c4SHifbwO90z2fQ8/Aio73yw==
 
-eslint-config-ruppy-base@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-ruppy-base/-/eslint-config-ruppy-base-1.5.0.tgz#893d4028ccb352c30ba8a8bd1eab681cbc87bf5b"
-  integrity sha512-8RHwzuR2nPXDeA95CK7VnKyoEMP0jSeMewnjAZGDMktoWYMg7wBbkh/VizANJsXrSwvjZaFR3qXWvkQgnIe2+w==
+eslint-config-ruppy-base@^1.6.0:
+  version "1.6.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-ruppy-base/-/eslint-config-ruppy-base-1.6.0.tgz#1979ccc6ef5749b20e1e571b76f1241164a75ca1"
+  integrity sha512-q2Ow9JjaBQS1mJShLb02KKXQE3sb7UR+Yh4nyXH/2czecC/wYfgpqLMXilwRRsM3yBQrTQxXWxLtFu+RPrLgBg==
   dependencies:
     confusing-browser-globals "^1.0.10"
-    eslint-config-prettier "^6.12.0"
+    eslint-config-prettier "^8.1.0"
 
-eslint-config-ruppy-node@^1.5.0:
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/eslint-config-ruppy-node/-/eslint-config-ruppy-node-1.5.0.tgz#7e4603ff8e7ead2a8e31c10d410bb50862ce622a"
-  integrity sha512-0AUPhsScrhjGIGocLgEk3m6OJrSkfTfEa3c3FSE3y6n3e9U3J1o5DfZTZ6PGSGxzUKxdKApO9sWbuKlrvGXX5g==
+eslint-config-ruppy-node@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/eslint-config-ruppy-node/-/eslint-config-ruppy-node-1.5.1.tgz#44c0b709ef0decd8dea6b6d583361535c8434c3c"
+  integrity sha512-sGtk4uih5zXzyeNhqDs6e7fH7wWjgdWPFpSjd0riB32swRFDRY/K2XIUA+2yvAglOJQzdBfdYFtarVLxhSH8LQ==
   dependencies:
-    eslint-config-ruppy-base "^1.5.0"
+    eslint-config-ruppy-base "^1.6.0"
 
 eslint-import-resolver-node@^0.3.4:
   version "0.3.4"
@@ -2783,11 +2781,6 @@ get-port@^5.1.1:
   version "5.1.1"
   resolved "https://registry.yarnpkg.com/get-port/-/get-port-5.1.1.tgz#0469ed07563479de6efb986baf053dcd7d4e3193"
   integrity sha512-g/Q1aTSDOxFpchXC4i8ZWvxA1lnPqx/JHqcpIw0/LX9T8x/GBbi6YnlN5nhaKIFkT8oFsscUKgDJYxfwfS6QsQ==
-
-get-stdin@^6.0.0:
-  version "6.0.0"
-  resolved "https://registry.yarnpkg.com/get-stdin/-/get-stdin-6.0.0.tgz#9e09bf712b360ab9225e812048f71fde9c89657b"
-  integrity sha512-jp4tHawyV7+fkkSKyvjuLZswblUtz+SQKzSWnBbii16BuZksJlU1wuBYXY75r+duh/llF1ur6oNwi+2ZzjKZ7g==
 
 get-stream@^4.0.0, get-stream@^4.1.0:
   version "4.1.0"
