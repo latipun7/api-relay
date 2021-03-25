@@ -1,8 +1,8 @@
-# api-relay
+# `api-relay`
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
-[![Discord](https://img.shields.io/discord/340308951826694157?style=flat-square&logo=discord&label=chat+and+discuss)](https://discord.gg/Zw8d3wy "Emperor Ruppy's Kingdom")
-![GitHub Workflow Status](https://img.shields.io/github/workflow/status/latipun7/api-relay/CI%20-%20Test%20Build%20%E2%9A%99%F0%9F%A4%96?label=Test%20Build&style=flat-square)
+[![Discord](https://img.shields.io/discord/758271814153011201?style=flat-square&logo=discord&label=chat+and+discuss)](https://discord.gg/njSj2Nq "Developers Indonesia")
+[![GitHub Workflow Status](https://img.shields.io/github/workflow/status/latipun7/api-relay/CI%20-%20Test%20Build%20%E2%9A%99%F0%9F%A4%96?logo=github%20actions&style=flat-square)](https://github.com/latipun7/api-relay/actions "GitHub Actions")
 
 > Latipun&#39;s API HTTP request relay collections 🔄
 
