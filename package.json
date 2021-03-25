@@ -40,7 +40,7 @@
     "@types/compression": "^1.7.0",
     "@types/cors": "^2.8.10",
     "@types/helmet": "^4.0.0",
-    "@types/jest": "^26.0.21",
+    "@types/jest": "^26.0.22",
     "@types/mongoose": "^5.10.4",
     "@types/serve-favicon": "^2.5.2",
     "@types/validator": "^13.1.3",
